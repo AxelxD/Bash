@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg">
     <nuxt />
   </div>
 </template>
@@ -15,6 +15,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background: linear-gradient(135deg, rgba(251,143,41,1) 0%, rgba(235,91,103,1) 32%, rgba(224,63,154,1) 63%, rgba(211,39,234,1) 100%);
 }
 
 *,
@@ -23,33 +24,15 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+.bg {
+  /* The image used */
+  background: linear-gradient(135deg, rgba(251,143,41,1) 0%, rgba(235,91,103,1) 32%, rgba(224,63,154,1) 63%, rgba(211,39,234,1) 100%);
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
 
 .button--grey:hover {
   color: #fff;
-  background-color: #35495e;
+  background-color: #000;
 }
 </style>

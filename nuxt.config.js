@@ -15,7 +15,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/lgo.png' }
     ]
   },
 
@@ -27,8 +27,7 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+  css: [],
 
   /*
   ** Plugins to load before mounting the App
@@ -55,12 +54,5 @@ module.exports = {
   /*
   ** Build configuration
   */
-  build: {
-    /*
-    ** You can extend webpack config here
-    */
-    extend(config, ctx) {
-      
-    }
-  }
+  build: {}
 }

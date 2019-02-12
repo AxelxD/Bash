@@ -1,35 +1,39 @@
 <template>
   <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        Bash
-      </h1>
-      <h2 class="subtitle">
-        Bash
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
+    <div class="row">
+    <div class="col">
+      <div class="card" style="border:3px solid rgb(236, 94, 100); margin:0 auto; min-width:260px;width:300px;height:auto;border-radius:4px; box-shadow: 0px 0px 32px #4d4d4d80;">
+
+        <div class="card-body">
+          <img src="/logo.png" class="card-img-top" alt="..." style="display:block;margin:50px auto 0;width:180px;height:180px;">
+          <br>
+          <br>
+          <h2 style="text-align: center; font-family: Bash-font; color: #666666; line-height: 0.8"><p>Big things have</p><p>small beginnings</p></h2>
+          <br>
+          <br>
+          <timer>Wait for it</timer>
+          <br>
+          <br>
+        </div>
+
       </div>
+      <div class="row">
+          <div class="col">
+            <footer style="text-align: center; font-family: Bash-italic; color: #fff; font-size: 0.9rem;">Copyright &copy; Bash 2018</footer>
+          </div>
+      </div>
+    </div>
+
     </div>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import timer from '~/components/timer.vue'
 
 export default {
   components: {
-    Logo
+    timer
   }
 }
 </script>
@@ -44,25 +48,17 @@ export default {
   text-align: center;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+@font-face {
+  font-family: 'Bash-font';
+  src: url("~assets/fonts/AppleGaramond-Light.ttf") format("truetype");
+
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+@font-face {
+  font-family: 'Bash-italic';
+  src: url("~assets/fonts/AppleGaramond-LightItalic.ttf") format("truetype");
+
 }
 
-.links {
-  padding-top: 15px;
-}
+
 </style>
